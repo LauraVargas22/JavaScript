@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 5em;
+    color: rgb(23, 10, 92);
+    padding-top: 2rem;
+}
+/*Barra de Búsqueda*/
+/*Definición de variables barra de búsqueda*/
+:root {
+    --bg: #F0F0F0;
+    --input-bg: white;
+    --text: #27292B;
+    --item-hover: #f6f6f6;
+}
+/*Estilos barra de búsqueda*/
+.search-box {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    background: var(--input-bg);
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    max-width: 80vw;
+    height: fit-content;
+    width: 100%;
+    box-shadow: rgba(149, 157,165, 0.2) 0px 8px 24px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+/*Estilos iconos barra de búsqueda*/
+button {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 0.5rem;
+}
+/*Estilos entrada de texto barra de búsqueda*/
+input {
+    flex: 1;
+    max-height: 2.5rem;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    color: var(--text);
+}
+
+.search-box svg {
+    stroke: var(--text)
+}
+/*Estilos resultados barra de búsqueda*/
+.results {
+    max-height: 20rem;
+    overflow-y: auto;
+}
+
+.results ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 0.25rem;
+}
+
+.results ul li {
+    list-style: none;
+    border-radius: 0.25rem;
+    padding: 1rem 0.75rem;
+}
+
+.results ul li:hover {
+    background: var(--item-hover);
+    border-radius: 0.25rem;
+}
