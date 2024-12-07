@@ -4,6 +4,25 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 h1 {
     display: flex;
     flex-direction: row;
@@ -15,73 +34,32 @@ h1 {
     color: rgb(23, 10, 92);
     padding-top: 2rem;
 }
-/*Barra de Búsqueda*/
-/*Definición de variables barra de búsqueda*/
-:root {
-    --bg: #F0F0F0;
-    --input-bg: white;
-    --text: #27292B;
-    --item-hover: #f6f6f6;
-}
-/*Estilos barra de búsqueda*/
-.search-box {
-    margin-top: 1rem;
-    margin-left: 2rem;
-    background: var(--input-bg);
-    border-radius: 0.5rem;
-    padding: 0.75rem;
-    max-width: 80vw;
-    height: fit-content;
-    width: 100%;
-    box-shadow: rgba(149, 157,165, 0.2) 0px 8px 24px;
-}
 
-.row {
-    display: flex;
-    align-items: center;
-}
-/*Estilos iconos barra de búsqueda*/
-button {
-    background: transparent;
-    border: 0;
-    outline: 0;
-    padding: 0.5rem;
-}
-/*Estilos entrada de texto barra de búsqueda*/
-input {
-    flex: 1;
-    max-height: 2.5rem;
-    border: 0;
-    outline: 0;
-    font-size: 1rem;
-    color: var(--text);
-}
-
-.search-box svg {
-    stroke: var(--text)
-}
-/*Estilos resultados barra de búsqueda*/
-.results {
-    max-height: 20rem;
-    overflow-y: auto;
+.search-bar {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .results ul {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    gap: 0.25rem;
-}
-
-.results ul li {
     list-style: none;
-    border-radius: 0.25rem;
-    padding: 1rem 0.75rem;
+    text-align: left;
 }
 
-.results ul li:hover {
-    background: var(--item-hover);
-    border-radius: 0.25rem;
+.results li {
+    padding: 8px 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    margin: 2px 0;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.image-container img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }

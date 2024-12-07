@@ -7,17 +7,14 @@
     <title>Intro JS</title>
 </head>
 <body>
-    <h1>Cars Brands</h1>
-    <div class="search-box">
-        <div class="row">
-            <!--Icono de búsqueda (lupa)-->
-            <button><img src="../images/hicon2.png"></button>
-            <input type="text" class="search-bar" placeholder="Search brand..." autocomplete="off"> <!--Entrada de texto-->
-            <!--Icono de filtro-->
-            <button><img src="../images/hicon.png"></button>
-        </div>
+    <div class="container">
+        <h1>Cars Brands</h1>
+        <input type="text" class="search-bar" placeholder="Search model or brand...">
         <div class="results"></div>
+        <div class="image-container">
+            <img src="" id="carImage" alt="Car Model" style="display: none;">
+        </div>
     </div>
-    <script src="js/ejercicio2.js"></script>
+    <script src="js/brandcars.js"></script>
 </body>
 </html>
