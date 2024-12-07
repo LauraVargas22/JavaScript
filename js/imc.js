@@ -20,10 +20,10 @@ document.getElementById('imcForm').addEventListener('submit', function (e) { e.p
             image = "<img src='../images/caso2.png' alt='Peso Normal' style='max-width: 100%; height: auto; margin-top: 10px;'>";
         } else if (imc >= 25 && imc <= 29.9) {
             message += "<strong>Su IMC corresponde a SOBREPESO</strong>.";
-            image = "<img src='../images/caso3.png' alt='Sobrepeso' style='max-width: 100%; height: auto; margin-top: 10px;'>"
+            image = "<img src='../images/caso3.png' alt='Sobrepeso' style='max-width: 100%; height: auto; margin-top: 10px;'>";
         } else {
             message += "<strong>Su IMC corresponde a OBESIDAD</strong>.";
-            image = "<img src='../images/caso4.png' alt='Obesidad' style='max-width: 100%; height: auto; margin-top: 10px;'>"
+            image = "<img src='../images/caso4.png' alt='Obesidad' style='max-width: 100%; height: auto; margin-top: 10px;'>";
         }
 
         resultDiv.innerHTML = message + image;
